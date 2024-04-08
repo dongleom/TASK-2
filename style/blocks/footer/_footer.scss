@@ -1,0 +1,31 @@
+.footer {
+    padding: 150px 340px;
+    background: #1B1A1F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    
+    @import "./_footer__right/footer__right";
+    @import "./_footer__left/footer__left";
+}
+
+@media (max-width:1500px) {
+    .footer {
+        gap: 64px;
+    }
+}
+
+@media (max-width:1025px) {
+    .footer {
+        gap: 45PX;
+        display: flex;
+        flex-direction: column;
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+        }
+    }
+}

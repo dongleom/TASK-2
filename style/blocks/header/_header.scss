@@ -1,0 +1,10 @@
+.header {
+    background-image: url("images/Banner.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1080px;
+    margin-bottom: 190px;
+    @import "./_header__upper/header__upper";
+    @import "./_header__main/header__main";
+}

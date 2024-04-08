@@ -1,0 +1,25 @@
+&__right {
+    max-width: 560px;
+    background: #1B1A1F;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+    &__first {
+        max-width: 220px;
+        
+        &__h6 {
+            color: white;
+            @extend %h6;
+            margin: 0 0 32px 0;
+            cursor: pointer;
+        }
+
+        &__p {
+            color: white;
+            @extend %p1;
+            margin: 0 0 16px 0;
+            cursor: pointer;
+        }
+    }
+}

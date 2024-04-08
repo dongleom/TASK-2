@@ -1,0 +1,36 @@
+.video {
+    background: #F8F8F8;
+    padding: 60px auto;
+    margin-bottom: 300px;
+    &__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 170px; 
+        &__h2 {
+            @extend %h2;
+        }
+
+        &__p1 {
+            @extend %p1;
+            width: 480px;
+        }
+    }
+
+    &__img {
+        padding: 60px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1500px) {
+    .video {
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}

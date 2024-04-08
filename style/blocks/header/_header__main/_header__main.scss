@@ -1,0 +1,20 @@
+&__main {
+    text-align: center;
+    &__h6 {
+        @extend %h6;
+        margin: 0;
+        color: white;
+        margin: 310px 0 0 0;
+    }
+
+    &__h1 {
+        margin: 0 0 12px 0;
+        @extend %h1;
+        color: white;
+    }
+
+    &__button {
+        @extend %regular;
+        color: white;
+    }
+}

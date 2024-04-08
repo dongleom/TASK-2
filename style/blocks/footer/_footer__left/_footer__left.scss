@@ -1,0 +1,28 @@
+&__left {
+   
+    background: #1B1A1F;
+
+    &__email {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        display: inline-flex;
+        padding: 12px 16px;
+        align-items: center;
+        background: #49484C;
+        color: white;
+        outline: none;
+        @extend %p2;
+        margin-bottom: 32px;
+        border: 0;
+    }
+
+    &__icons {
+
+        fill: #F8F8F8;  
+        &__svg {
+            margin-right: 26px;
+            cursor: pointer;
+        }
+    }
+}   

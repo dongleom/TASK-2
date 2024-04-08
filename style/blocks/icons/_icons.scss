@@ -1,0 +1,51 @@
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__all {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; 
+
+            &__h6 {
+                @extend %h6;
+                margin: 0;
+            }
+
+            &__p2 {
+                @extend %p2;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width:1500px) { 
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0  auto;
+        align-items: center;
+        gap: 60px;
+    }
+}
+
+
+
+@media (max-width:1200px) { 
+    .icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0  auto;
+        align-items: center;   
+        gap: 60px; 
+    }
+}

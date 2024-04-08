@@ -1,0 +1,36 @@
+&__upper {
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid 1px #FFF;
+
+    &__nav {
+        margin: 0 auto;
+        &__a {
+            @extend %h6;
+            color: white;
+            margin-right: 70px;
+            gap: 70px;
+            cursor: pointer;
+        }
+        &__a:nth-child(3) {
+            margin-right: 0;
+        }
+    }
+
+    &__icons {
+        position: absolute;
+        right: 10px;
+        &__svg {
+            align-items: center;
+            margin-right: 26px;
+            cursor: pointer;
+        }
+
+        &__svg:nth-child(3) {
+            margin-right: 120px;
+        }
+        
+    }
+}
